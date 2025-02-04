@@ -1,1 +1,1 @@
-Creation scripts of all my functional SQL tables organized in folders by their database name.
+## PROJECT IS PUBLISHED WITH THE PURPOSE OF SHOWCASING PROGRAMMING ABILITIES.
