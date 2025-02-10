@@ -22,6 +22,7 @@ create table models
 );
 
 create index get
-    on models (family, deletion_date, sent_token_cost, received_token_cost, context);
+    on models (family, deletion_date, sent_token_cost, received_token_cost, context, sent_token_audio_cost,
+               received_token_audio_cost);
 
 
