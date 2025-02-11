@@ -1,4 +1,4 @@
-create table positions
+create table memberPositions
 (
     id              int auto_increment
         primary key,
@@ -11,6 +11,6 @@ create table positions
 );
 
 create index get
-    on positions (team_id, member_id, id);
+    on memberPositions (team_id, member_id, id);
 
 

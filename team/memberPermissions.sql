@@ -1,4 +1,4 @@
-create table permissions
+create table memberPermissions
 (
     id              int auto_increment
         primary key,
@@ -14,9 +14,9 @@ create table permissions
 );
 
 create index get
-    on permissions (team_id, member_id, permission_id, id);
+    on memberPermissions (team_id, member_id, permission_id, id);
 
 create index get_multiple
-    on permissions (team_id, member_id, id);
+    on memberPermissions (team_id, member_id, id);
 
 
