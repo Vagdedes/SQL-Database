@@ -10,10 +10,13 @@ create table permissionDefinitions
     deletion_reason varchar(7500) null
 );
 
-create index get
-    on permissionDefinitions (id, deletion_date, additional_id);
-
 create index get_all
     on permissionDefinitions (deletion_date, additional_id);
+
+create index get_by_id
+    on permissionDefinitions (id, deletion_date, additional_id);
+
+create index get_by_name
+    on permissionDefinitions (name, deletion_date, additional_id);
 
 
