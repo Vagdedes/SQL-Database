@@ -7,6 +7,7 @@ create table models
     request_headers           varchar(512)  null,
     post_fields               varchar(512)  null,
     encode_fields             tinyint(1)    null,
+    base64_encode_reply       tinyint(1)    null,
     tokenizer                 varchar(32)   null,
     context                   int           null,
     currency_id               int           null,
