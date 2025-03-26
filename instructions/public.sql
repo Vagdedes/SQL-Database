@@ -11,7 +11,6 @@ create table public
     auto_contains          int           null,
     `replace`              tinyint(1)    null,
     default_use            tinyint(1)    null,
-    sub_directories        tinyint(1)    null,
     creation_date          datetime      null,
     creation_reason        varchar(3750) null,
     expiration_date        datetime      null,
