@@ -8,8 +8,8 @@ create table executableTasks
     code_dependencies longtext      null,
     debug_code        tinyint(1)    null,
     debug_result      longtext      null,
-    creation_date     timestamp     null,
-    expiration_date   timestamp     null
+    creation_date     datetime      null,
+    expiration_date   datetime      null
 );
 
 create index get
