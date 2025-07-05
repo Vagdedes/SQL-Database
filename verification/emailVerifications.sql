@@ -11,6 +11,9 @@ create table emailVerifications
     expiration_date datetime         null
 );
 
+create index complete
+    on emailVerifications (completion_date, expiration_date);
+
 create index complete_code
     on emailVerifications (code, completion_date, expiration_date);
 
