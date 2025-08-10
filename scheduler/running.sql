@@ -5,9 +5,10 @@ create table running
     server_hash     bigint null,
     script_hash     bigint null,
     expiration_time bigint null
-);
+)
+    engine = MEMORY;
 
 create index get
-    on running (server_hash, script_hash, expiration_time);
+    on running (script_hash, expiration_time);
 
 
