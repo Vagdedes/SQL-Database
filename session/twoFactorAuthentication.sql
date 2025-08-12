@@ -1,4 +1,4 @@
-create table instantLogins
+create table twoFactorAuthentication
 (
     id              bigint auto_increment
         primary key,
@@ -13,18 +13,18 @@ create table instantLogins
 );
 
 create index completion_code
-    on instantLogins (completion_date, expiration_date, ip_address, code);
+    on twoFactorAuthentication (completion_date, expiration_date, ip_address, code);
 
 create index completion_token
-    on instantLogins (completion_date, expiration_date, ip_address, token);
+    on twoFactorAuthentication (completion_date, expiration_date, ip_address, token);
 
 create index initiate
-    on instantLogins (account_id, ip_address, completion_date);
+    on twoFactorAuthentication (account_id, ip_address, completion_date);
 
 create index panel
-    on instantLogins (account_id, id);
+    on twoFactorAuthentication (account_id, id);
 
 create index pending
-    on instantLogins (completion_date, expiration_date, account_id, ip_address);
+    on twoFactorAuthentication (completion_date, expiration_date, account_id, ip_address);
 
 
