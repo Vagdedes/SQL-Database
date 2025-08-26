@@ -8,9 +8,9 @@ create table executableTasks
     code_dependencies longtext      null,
     debug_code        tinyint(1)    null,
     debug_result      longtext      null,
+    website_execution tinyint(1)    null,
     creation_date     datetime      null,
-    expiration_date   datetime      null,
-    website_execution tinyint(1)    null
+    expiration_date   datetime      null
 );
 
 create index get
