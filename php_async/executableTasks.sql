@@ -9,7 +9,8 @@ create table executableTasks
     debug_code        tinyint(1)    null,
     debug_result      longtext      null,
     creation_date     datetime      null,
-    expiration_date   datetime      null
+    expiration_date   datetime      null,
+    website_execution tinyint(1)    null
 );
 
 create index get
