@@ -3,6 +3,7 @@ create table models
     id                        int auto_increment
         primary key,
     family                    int           null,
+    model_name                varchar(128)  null,
     request_url               varchar(128)  null,
     request_headers           varchar(512)  null,
     post_fields               varchar(512)  null,
