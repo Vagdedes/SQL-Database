@@ -4,6 +4,7 @@ create table roles
         primary key,
     team_id         int           null,
     title           varchar(64)   null,
+    last_position   int           null,
     creation_date   timestamp     null,
     creation_reason varchar(8000) null,
     created_by      int           null,

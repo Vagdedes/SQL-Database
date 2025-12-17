@@ -4,6 +4,7 @@ create table members
         primary key,
     team_id         int           null,
     account_id      int unsigned  null,
+    last_position   int           null,
     creation_date   datetime      null,
     creation_reason varchar(8000) null,
     created_by      int           null,
