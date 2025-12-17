@@ -14,6 +14,9 @@ create table roleMembers
 );
 
 create index get
-    on roleMembers (team_id, member_id, deletion_date);
+    on roleMembers (team_id, member_id, deletion_date, id);
+
+create index get_all
+    on roleMembers (team_id, deletion_date, id);
 
 
