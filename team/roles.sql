@@ -1,6 +1,6 @@
 create table roles
 (
-    id              int auto_increment
+    id              bigint auto_increment
         primary key,
     team_id         int           null,
     title           varchar(64)   null,
