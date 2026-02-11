@@ -1,6 +1,6 @@
 create table permissions
 (
-    id              int auto_increment
+    id              bigint auto_increment
         primary key,
     role_id         int              null,
     permission      varchar(64)      null,

@@ -1,6 +1,6 @@
 create table accountRoles
 (
-    id              int auto_increment
+    id              bigint auto_increment
         primary key,
     account_id      int(11) unsigned null,
     role_id         int              null,

@@ -1,6 +1,6 @@
 create table functionalities
 (
-    id              int auto_increment
+    id              bigint auto_increment
         primary key,
     name            varchar(32)   null,
     creation_date   datetime      null,

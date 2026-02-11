@@ -1,6 +1,6 @@
 create table roles
 (
-    id              int auto_increment
+    id              bigint auto_increment
         primary key,
     application_id  int              null,
     priority        int              null,
