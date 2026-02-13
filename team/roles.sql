@@ -2,15 +2,15 @@ create table roles
 (
     id              bigint auto_increment
         primary key,
-    team_id         int           null,
+    team_id         bigint        null,
     title           varchar(64)   null,
     last_position   int           null,
     creation_date   timestamp     null,
     creation_reason varchar(8000) null,
-    created_by      int           null,
+    created_by      bigint        null,
     deletion_date   timestamp     null,
     deletion_reason varchar(8000) null,
-    deleted_by      int           null
+    deleted_by      bigint        null
 );
 
 create index get_by_id

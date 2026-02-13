@@ -1,6 +1,6 @@
 create table permissionDefinitions
 (
-    id              int auto_increment
+    id              bigint auto_increment
         primary key,
     additional_id   int           null,
     name            varchar(64)   null,

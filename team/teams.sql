@@ -1,6 +1,6 @@
 create table teams
 (
-    id                 int auto_increment
+    id                 bigint auto_increment
         primary key,
     additional_id      int              null,
     creation_date      datetime         null,
@@ -8,7 +8,7 @@ create table teams
     created_by_account int(11) unsigned null,
     deletion_date      datetime         null,
     deletion_reason    varchar(7500)    null,
-    deleted_by         int              null
+    deleted_by         bigint           null
 );
 
 create index find_new
