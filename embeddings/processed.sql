@@ -4,8 +4,8 @@ create table processed
         primary key,
     embedding_hash  bigint       null,
     embedding_model varchar(128) null,
-    actual          longtext     null,
-    objectified     longtext     null,
+    actual          longblob     null,
+    objectified     longblob     null,
     creation_date   timestamp    null,
     expiration_date timestamp    null,
     deletion_date   timestamp    null
