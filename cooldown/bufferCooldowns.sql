@@ -11,7 +11,4 @@ create table bufferCooldowns
 create index `check`
     on bufferCooldowns (account_id, action_id, expiration);
 
-create index panel
-    on bufferCooldowns (account_id, id);
-
 

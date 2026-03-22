@@ -21,9 +21,6 @@ create index completion_token
 create index initiate
     on twoFactorAuthentication (account_id, ip_address, completion_date);
 
-create index panel
-    on twoFactorAuthentication (account_id, id);
-
 create index pending
     on twoFactorAuthentication (completion_date, expiration_date, account_id, ip_address);
 

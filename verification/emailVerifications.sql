@@ -23,9 +23,6 @@ create index complete_token
 create index initiate
     on emailVerifications (completion_date, expiration_date, email_address, account_id);
 
-create index panel
-    on emailVerifications (id, account_id);
-
 create index verify
     on emailVerifications (email_address, account_id, completion_date);
 

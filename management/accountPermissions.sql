@@ -19,7 +19,4 @@ create index get
 create index get_specific
     on accountPermissions (account_id, expiration_date, deletion_date, permission);
 
-create index panel
-    on accountPermissions (account_id, id);
-
 

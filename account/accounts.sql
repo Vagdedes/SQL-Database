@@ -24,7 +24,7 @@ create index custom_spam_check
     on accounts (type, custom_id, deletion_date, creation_date, application_id);
 
 create index email_address
-    on accounts (email_address(191), deletion_date, application_id);
+    on accounts (email_address, deletion_date, application_id);
 
 create index id
     on accounts (id, deletion_date, application_id);

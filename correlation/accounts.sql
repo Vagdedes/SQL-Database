@@ -26,9 +26,6 @@ create index add_name
 create index add_name_manual
     on accounts (name, deletion_date, application_id, manual);
 
-create index panel
-    on accounts (application_id);
-
 create index selection
     on accounts (manual, deletion_date, application_id);
 

@@ -24,9 +24,6 @@ create index added_specific
 create index lookup
     on addedAccounts (accepted_account_id, credential, deletion_date);
 
-create index panel
-    on addedAccounts (account_id, id);
-
 create index purchases
     on addedAccounts (deletion_date, credential, accepted_account_id);
 

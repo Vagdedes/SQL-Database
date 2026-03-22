@@ -9,9 +9,6 @@ create table settings
     last_modification_date datetime         null
 );
 
-create index panel
-    on settings (account_id, id);
-
 create index `specific`
     on settings (account_id, option_key);
 

@@ -16,9 +16,6 @@ create table accountRoles
 create index account
     on accountRoles (account_id, creation_date, expiration_date, deletion_date);
 
-create index panel
-    on accountRoles (account_id, id);
-
 create index role
     on accountRoles (role_id, creation_date, expiration_date, account_id, deletion_date);
 

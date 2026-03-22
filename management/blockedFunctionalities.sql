@@ -41,7 +41,4 @@ create index list_received
 create index list_received_all
     on blockedFunctionalities (id, account_id);
 
-create index panel
-    on blockedFunctionalities (id, account_id);
-
 

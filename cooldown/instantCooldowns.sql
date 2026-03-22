@@ -10,7 +10,4 @@ create table instantCooldowns
 create index `check`
     on instantCooldowns (account_id, action_id, expiration);
 
-create index panel
-    on instantCooldowns (account_id, id);
-
 

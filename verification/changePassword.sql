@@ -20,9 +20,6 @@ create index complete_code
 create index complete_token
     on changePassword (token, completion_date, expiration_date);
 
-create index panel
-    on changePassword (id, account_id);
-
 create index request
     on changePassword (account_id, completion_date, expiration_date);
 
