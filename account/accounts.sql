@@ -1,20 +1,21 @@
 create table accounts
 (
-    id              int(11) unsigned auto_increment
+    id                      int(11) unsigned auto_increment
         primary key,
-    type            bigint        null,
-    custom_id       bigint        null,
-    application_id  int           null,
-    email_address   varchar(384)  null,
-    password        varchar(256)  null,
-    name            varchar(20)   null,
-    first_name      varchar(32)   null,
-    middle_name     varchar(32)   null,
-    last_name       varchar(32)   null,
-    creation_date   datetime      null,
-    creation_reason varchar(7500) null,
-    deletion_date   datetime      null,
-    deletion_reason varchar(7500) null
+    type                    bigint        null,
+    custom_id               bigint        null,
+    application_id          int           null,
+    email_address           varchar(384)  null,
+    temporary_email_address varchar(384)  null,
+    password                varchar(256)  null,
+    name                    varchar(20)   null,
+    first_name              varchar(32)   null,
+    middle_name             varchar(32)   null,
+    last_name               varchar(32)   null,
+    creation_date           datetime      null,
+    creation_reason         varchar(7500) null,
+    deletion_date           datetime      null,
+    deletion_reason         varchar(7500) null
 );
 
 create index `all`
