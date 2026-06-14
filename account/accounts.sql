@@ -24,6 +24,9 @@ create index `all`
 create index custom_spam_check
     on accounts (type, custom_id, deletion_date, creation_date, application_id);
 
+create index delete_temporary_email
+    on accounts (temporary_email_address);
+
 create index email_address
     on accounts (email_address, deletion_date, application_id);
 
