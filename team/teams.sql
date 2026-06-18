@@ -19,6 +19,6 @@ create index get_by_id
     on teams (deletion_date, id, additional_id);
 
 create index last_access
-    on teams (last_accessed_date, deletion_date);
+    on teams (additional_id, last_accessed_date, deletion_date, id);
 
 
