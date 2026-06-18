@@ -6,6 +6,7 @@ create table teams
     creation_date      datetime         null,
     creation_reason    varchar(7500)    null,
     created_by_account int(11) unsigned null,
+    last_accessed_date datetime         null,
     deletion_date      datetime         null,
     deletion_reason    varchar(7500)    null,
     deleted_by         bigint           null
@@ -16,5 +17,8 @@ create index find_new
 
 create index get_by_id
     on teams (deletion_date, id, additional_id);
+
+create index last_access
+    on teams (last_accessed_date, deletion_date);
 
 
