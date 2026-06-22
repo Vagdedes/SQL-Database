@@ -8,14 +8,14 @@ create table accounts
     email_address           varchar(384)  null,
     temporary_email_address varchar(384)  null,
     password                varchar(256)  null,
-    name                    varchar(20)   null,
+    name                    varchar(512)  null,
     first_name              varchar(32)   null,
     middle_name             varchar(32)   null,
     last_name               varchar(32)   null,
     creation_date           datetime      null,
-    creation_reason         varchar(7500) null,
+    creation_reason         varchar(7250) null,
     deletion_date           datetime      null,
-    deletion_reason         varchar(7500) null
+    deletion_reason         varchar(7250) null
 );
 
 create index `all`
